@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <style>
+BODY {
+	margin: 20px 0px 20px 0px;
+	background-color: #878787;
+	font-family: arial;
+	font-size: 12pt;
+background: #2b2b2b;
+background: -moz-linear-gradient(top, #2b2b2b 0%, #323232 12%, #393939 25%, #282828 39%, #191919 50%, #181818 76%, #101010 91%, #0b0b0b 100%);
+background: -webkit-linear-gradient(top, #2b2b2b 0%,#323232 12%,#393939 25%,#282828 39%,#191919 50%,#181818 76%,#101010 91%,#0b0b0b 100%);
+background: linear-gradient(to bottom, #2b2b2b 0%,#323232 12%,#393939 25%,#282828 39%,#191919 50%,#181818 76%,#101010 91%,#0b0b0b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#0b0b0b',GradientType=0 );
+	}
+	
+.page{
+	display: block;
+	width: 1000px;
+	min-height: 800px;
+	overflow: auto;
+	margin: 0px auto 0px auto;
+	box-sizing: border-box;
+	}
+	
+
+
+.pageNavigationBar{
+	background-color: #777777;
+	color: #000000;
+	text-align: center;
+	float: left;
+	clear: none;
+	min-height: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	}
+
+.pageRightPanel{
+	background-color: #FFFFFF;
+	float: right;
+	clear: none;
+	min-height: 550px;
+	width: 200px;
+	box-sizing: border-box;
+	padding: 10px; 
+	}
+	
+.pageContent{
+	background-color: #FFFFFF;
+	color: #FFFFFF
+	float: left;
+	clear: none;
+	min-height: 550px;
+	width: 800px;
+	box-sizing: border-box;
+	padding: 10px;
+	}
+	
+.pageFooter{
+	background-color: #000000;
+	float: left;
+	clear: none;
+	min-height: 50px;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px;
+	}
+
+H1  {
+	color: #000000;
+	font-size: 18pt;
+	font-family: "Arial";
+	background-color: #b2b2b2;  
+	border-bottom: 2px solid #474747;  
+	border-left: 20px solid #000000;
+	padding-left: 20px;
+	}
+P {
+	font-family: "Arial";
+	color: #000000; 
+	font-size: 12pt;
+	text-align: justify;  
+	line-height: 28px;  
+	padding: 10px;
+	margin-top: 10px;
+	}
+
+
+ </style>
+ 
+ <title>CODE 1230 - Assignment 2</title>
+</head>
+<body>
+<div class="page">
+ <div class="pageHeader">
+ 
+ 
+ </div>
+ <div class="pageNavigationBar">
+   <center>
+	<A href="index.html"><IMG src="images/home.png" height="400" width=400"></A>
+	<A href="mining_button.html"><IMG src="images/mining_nsw.jpg" height="400" width=500"></A>
+	<A href="construction_button.html"><IMG src="images/cons_nsw.jpg" height="400" width=500"></A>
+	<A href="education_button.html"><IMG src="images/edu_train_nsw.jpg" height="400" width=410"></A>
+   </center>
+	
+	
+ 
+ </div> 
+ <div class="pageContent">
+ <H1>Australian 2016 Census Analysis of Mining in NSW</H1>
+ <P>Story:...</P>
+ 
+ 
+ </div>
+
+ 
+ </div>
+</div>
+</body>
+</html>
