@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <script src='./ReducedConstructionFemale.json'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNwOTkiLCJhIjoiY2pobmd5aGJxMWdiYzNhcXdpaWVhdzhkbCJ9._o-_ysHz5HG9S49UizQiqQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [142, -30],
+    zoom: 5,
+    pitch: 40,
+    bearing: 20
+});
+
+map.on('load', function() {
+
+    map.addLayer({
+        'id': 'data',
+        'type': 'fill-extrusion',
+        'source': {
+            'type': 'geojson',
+            'data': data 
+        },
+        'paint': {
+            //'fill-color': '#088',
+            //'fill-opacity': 0.8
+
+            'fill-extrusion-color': {
+                'property': 'DataFemCon',
+                "stops": [
+                    [0, 'black'],
+                    [1000, 'orange']
+                ]
+            },
+            'fill-extrusion-height': {
+                'property': 'ExpFemCon',
+                "stops": [
+                    [0.2, 0],
+                    [1, 65535]
+                    ]
+            },            
+            'fill-extrusion-opacity': 0.9
+        }
+    });
+});
+</script>
+
+</body>
+</html>
